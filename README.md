@@ -10,7 +10,7 @@ This creates and starts a passfault docker instance
 
 `docker run -d ccaamm/passfault`
 
-You can verify it is up and running at https://{container-ip}:8080
+You can verify it is up and running at *https://{container-ip}:8080*
 
 `docker run -d -p 8080:8080 ccaamm/passfault`
 
