@@ -10,14 +10,14 @@ This creates and starts a passfault docker instance
 
 `docker run -d ccaamm/passfault`
 
-You can verify it is up and running at https://{container-ip}:8443
-Alternatively you can expose the SSL port as follows:
+You can verify it is up and running at https://{container-ip}:8080
 
-`docker run -d -p 8443:8443 ccaamm/passfault`
+`docker run -d -p 8080:8080 ccaamm/passfault`
 
 (technically you could also expose the clear-text port 8080, but these are passwords!)
 
 ## Make Passfault Your Own
 
-You want to add your own wordlists? Or maybe turn off some of the built-in wordlists? Here is a docker template to extend
-this image: https://github.com/c-a-m/passfault-docker-template
+You want to add your own wordlists? Or maybe turn off some of the built-in wordlists? This image defines the __PASSFAULT_WORDLISTS__ for you to __ADD__ your own wordlists too.  Also in that same directory is a __wordlists.properties__ that needs to be replaced or appended with the new wordlists.  The syntax for the wordlists is self-described in the default configuration file here: https://github.com/c-a-m/passfault/blob/master/wordlists/wordlists/words.properties
+
+To simplify extending the image, here is a custom passfault docker template: https://github.com/c-a-m/passfault-docker-template
