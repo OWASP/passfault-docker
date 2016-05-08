@@ -1,6 +1,6 @@
 FROM jetty
 MAINTAINER Cam Morris <cam.morris@owasp.org>
-ARG VERSION=0.81
+ARG VERSION=0.8.2
 ENV PASSFAULT_WORDLISTS=${JETTY_BASE}/webapps/ROOT/WEB-INF/classes/org/owasp/passfault/wordlists
 ADD https://github.com/c-a-m/passfault/releases/download/v${VERSION}/passfault-jsonService-${VERSION}.war /tmp/passfault.war
 RUN mkdir ${JETTY_BASE}/webapps/ROOT && \
