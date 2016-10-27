@@ -18,10 +18,10 @@ Alternatively you can map the internal port to an external port of the server ho
 
 ## Make Passfault Your Own
 
-You want to add your own wordlists? Or maybe turn off some of the built-in wordlists? This image defines the __PASSFAULT_WORDLISTS__ environment variable for you to __ADD__ your own wordlists too.  Also in that same directory is a __wordlists.properties__ that needs to be replaced or appended with configuration for the new wordlists.  The syntax for the wordlists is self-described in the default configuration file here: https://github.com/c-a-m/passfault/blob/master/wordlists/wordlists/words.properties
+You want to add your own wordlists? Or maybe turn off some of the built-in wordlists? This image defines the __PASSFAULT_WORDLISTS__ environment variable for you to __ADD__ your own wordlists too.  Also in that same directory is a __wordlists.properties__ that needs to be replaced or appended with configuration for the new wordlists.  The syntax for the wordlists is self-described in the default configuration file here: https://github.com/owasp/passfault/blob/master/wordlists/wordlists/words.properties
 
-To simplify extending the image, here is a custom passfault docker template: https://github.com/c-a-m/passfault-docker-template
+To simplify extending the image, here is a custom passfault docker template: https://github.com/owasp/passfault-docker-template
 
 ## SSL/TLS
 
-You want SSL turned on for passfault in docker?  This can also be done by extending this image.  The passfault-docker-template generates a keystore with a self-signed certificate and starts up with SSL enabled: https://github.com/c-a-m/passfault-docker-template
+You want SSL turned on for passfault in docker?  This can also be done by extending this image.  The passfault-docker-template generates a keystore with a self-signed certificate and starts up with SSL enabled: https://github.com/owasp/passfault-docker-template
