@@ -22,6 +22,6 @@ You want to add your own wordlists? Or maybe turn off some of the built-in wordl
 
 To simplify extending the image, here is a custom passfault docker template: https://github.com/owasp/passfault-docker-template
 
-## SSL/TLS
+## TLS
 
-You want SSL turned on for passfault in docker?  This can also be done by extending this image.  The passfault-docker-template generates a keystore with a self-signed certificate and starts up with SSL enabled: https://github.com/owasp/passfault-docker-template
+You want TLS turned on for passfault in docker?  This can also be done by extending this image.  The passfault-docker-template shows how to put your own certificate into passfault, or by default generates a keystore with a self-signed certificate and starts up with SSL enabled: https://github.com/owasp/passfault-docker-template
